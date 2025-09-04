@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavin K K — Python Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Kavin K K — Web Developer (Python, MySQL, HTML, CSS, JavaScript)" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8f9fa;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 8%;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      z-index: 100;
+    }
+
+    nav h1 {
+      font-size: 22px;
+      background: linear-gradient(90deg, #06b6d4, #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f8f9fa;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #06b6d4;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 10%;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      max-width: 600px;
+    }
+
+    .btn-primary {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #06b6d4, #7c3aed);
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.85;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 24px;
+      background: linear-gradient(90deg, #06b6d4, #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Skills */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .skill {
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 14px;
+      color: #cbd5e1;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .project {
+      padding: 18px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .project p {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    /* Contact */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #06b6d4;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #7c3aed;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(10px);
+    }
+
+    @media(max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Kavin K K</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Hi, I'm <span style="color:#06b6d4">Kavin</span> 👋</h2>
+    <p>I'm an Enthusiastic Web Developer skilled in Python, Django, JavaScript, HTML, CSS, MySQL & building scalable web
+      applications.</p>
+    <a href="#contact"><button class="btn-primary">Hire Me</button></a>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="max-width:700px;margin:auto;text-align:center;color:#cbd5e1">
+      Enthusiastic Web Developer skilled in Python, JavaScript, HTML, CSS, and MySQL, eager to design scalable
+      applications and deliver impactful web solutions. Looking forward to contributing to innovative projects.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Bootstrap</span>
+      <span class="skill">jQuery</span>
+      <span class="skill">Python</span>
+      <span class="skill">Tkinter</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">Prompt Engineering</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>AI-Based Dynamic Real-Time Task Scheduling Algorithm</h3>
+        <p>We schedule the different tasks in autonomous vehicle using RTOS and STM32 Processor and also presented paper on this title at an IEEE
+          conference.</p>
+      </div>
+
+      <div class="project">
+        <h3>Banking Management System</h3>
+        <p>Desktop application built with Python, Tkinter and MySQL Manages Customer Account Creation, Account Deletion, Update details, Deposits/Withdrawals,
+          ,Balance Enquiry, Passbook and Transaction history.</p>
+      </div>
+
+      <div class="project">
+        <h3>Mobile E-commerce Website</h3>
+        <p>Responsive E-Commerce website using HTML, CSS and JavaScript. Features product listings, shopping cart, and
+          checkout process.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p style="text-align:center;color:#cbd5e1">
+      <strong>B.E / Electrical & Electronics Engineering</strong><br>
+      K S R Institute for Engineering and Technology, Tiruchengode — 2021 - 2025 · CGPA: 7.56 (75%)
+      <br><br>
+      <strong>HSC</strong> — SRV Boys Higher Secondary School, Rasipuram — 2019 - 2021 · 85%<br>
+      <strong>SSLC</strong> — Sri Vidya Mandir Matriculation School, Kurukkapuram — 2018 - 2019 · 85%
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <a href="mailto:kavin2004kk@gmail.com">📧 kavin2004kk@gmail.com</a>
+      <a href="tel:+916380817661">📱 +91 63808 17661</a>
+      <a href="https://www.linkedin.com/in/kavin-kk-25a7b3299" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
+  <footer>
+    © 2025 Kavin K K — Open to Exciting Job Opportunities.
+  </footer>
+</body>
+
+</html>
